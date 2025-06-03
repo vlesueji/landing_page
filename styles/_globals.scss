@@ -1,2 +1,16 @@
+@use 'variables';
+@use 'fonts';
+
 body {
+  background-color: var(--white);
+  font-family: var(--font-main);
+}
+
+a {
+  color: inherit;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--orange);
+  }
 }

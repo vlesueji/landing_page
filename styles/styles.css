@@ -138,7 +138,6 @@ legend {
   --border-radius-button: 40px;
   --border-radius-header: 70px;
   --font-main: "Poppins", sans-serif;
-  --font-second: "Inter", sans-serif;
   --container-width: 1380px;
   --button-height: 60px;
   --input-height: 60px;
@@ -163,17 +162,62 @@ legend {
   overflow: hidden;
 }
 
+body {
+  background-color: var(--white);
+  font-family: var(--font-main);
+}
+
+a {
+  color: inherit;
+  transition: 0.2s ease-in-out;
+}
+a:hover {
+  color: var(--orange);
+}
+
 .header {
+  height: 90px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 34px;
+  padding-left: 40px;
+  padding-right: 24px;
   justify-content: space-between;
+  background-color: var(--gray-2);
+  border-radius: var(--border-radius-header);
 }
 
-.nav_list {
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu-list {
+  height: 60px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 35px;
+  margin-right: 80px;
+  background-color: var(--white);
+  padding-inline: 22px;
+  border-radius: var(--border-radius-button);
+}
+
+.header__button {
+  height: var(--button-height);
+  border-radius: var(--border-radius-button);
+  background-color: var(--white);
+  padding-inline: 35px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--gray-color);
+  transition: 0.2s ease-in-out;
+}
+.header__button:hover {
+  border-style: solid;
+  border-color: var(--orange);
 }
 
 /*# sourceMappingURL=styles.css.map */

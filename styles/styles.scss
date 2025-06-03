@@ -7,14 +7,47 @@
 @use "globals";
 
 .header {
+  height: 90px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 34px;
+  padding-left: 40px;
+  padding-right: 24px;
   justify-content: space-between;
+  background-color: var(--gray-2);
+  border-radius: var(--border-radius-header);
 }
 
-.nav_list {
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu-list {
+  height: 60px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 35px;
+  margin-right: 80px;
+  background-color: var(--white);
+  padding-inline: 22px;
+  border-radius: var(--border-radius-button);
+}
+
+.header__button {
+  height: var(--button-height);
+  border-radius: var(--border-radius-button);
+  background-color: var(--white);
+  padding-inline: 35px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--gray-color);
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    border-style: solid;
+    border-color: var(--orange);
+  }
 }
