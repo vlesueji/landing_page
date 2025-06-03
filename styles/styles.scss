@@ -1,0 +1,20 @@
+@use "normalize";
+@use "fonts";
+@use "media";
+@use "mixins";
+@use "utils";
+@use "variables";
+@use "globals";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_list {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+}
