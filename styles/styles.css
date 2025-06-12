@@ -175,6 +175,13 @@ a:hover {
   color: var(--orange);
 }
 
+h1 {
+  font-size: 67px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 24px;
+}
+
 .header {
   height: 90px;
   display: flex;
@@ -221,6 +228,46 @@ a:hover {
   border-style: solid;
   border-color: var(--orange);
   color: var(--orange);
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 32px;
+  border-radius: var(--border-radius-card);
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+.home__info {
+  padding-left: 46px;
+  padding-top: 90px;
+  width: 50%;
+}
+
+.home__image {
+  position: relative;
+  top: 50px;
+}
+
+.mail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 440px;
+  height: 60px;
+  background: var(--white);
+  border-radius: var(--border-radius-button);
+  padding-left: 24px;
+}
+
+.mail__button {
+  background-color: var(--black);
+  color: var(--white);
+  height: 100%;
+  width: 150px;
+  border-radius: var(--border-radius-button);
 }
 
 /*# sourceMappingURL=styles.css.map */

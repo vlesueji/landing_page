@@ -57,3 +57,44 @@
     }
   }
 }
+
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 32px;
+  border-radius: var(--border-radius-card);
+  background: variables.$gradient;
+}
+
+.home__info {
+  padding-left: 46px;
+  padding-top: 90px;
+  width: 50%;
+}
+
+.home__image {
+  position: relative;
+  top: +50px;
+}
+
+.mail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 440px;
+  height: 60px;
+  background: var(--white);
+  border-radius: var(--border-radius-button);
+  padding-left: 24px;
+}
+
+.mail__button {
+  background-color: var(--black);
+  color: var(--white);
+  height: 100%;
+  width: 150px;
+  border-radius: var(--border-radius-button);
+}
+
