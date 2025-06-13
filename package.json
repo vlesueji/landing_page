@@ -1,5 +1,6 @@
 {
   "devDependencies": {
-    "gulp": "^5.0.1"
+    "gulp": "^5.0.1",
+    "gulp-server-livereload": "^1.9.2"
   }
 }
