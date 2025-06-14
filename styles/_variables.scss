@@ -24,3 +24,8 @@ $gradient: linear-gradient(to right, var(--primary), var(--secondary));
 
   --transition-duration: 0.2s;
 }
+
+$breakpoints: (
+  'mobile': 500px,
+  'laptop': 1024px,
+);

@@ -1,0 +1,23 @@
+@use 'variables';
+
+// Если устройство без hover-эффекта, то применяем стили на active:
+@mixin hover {
+  @media(hover: hover) {
+    &:hover {
+      @content
+    }
+  }
+  @media(hover: none) {
+    &:active {
+      @content
+    }
+  }
+}
+
+//медиа запросы на max-width с использованием breakpoints:
+@mixin respond-down($breakpoint){
+  $max-width: map-get(variables.$breakpoints, $breakpoint);
+  @media (max-width: $max-width) {
+    @content;
+  }
+}

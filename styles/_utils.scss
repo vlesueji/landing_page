@@ -1,7 +1,9 @@
 @use 'variables';
+@use 'media';
 
 .container {
   max-width: var(--container-width);
+  width: 95vw;
   margin: 0 auto;
 }
 
@@ -21,4 +23,10 @@
 @mixin border{
   border-style: solid;
   border-color: red;
+}
+
+.hidden-mobile {
+  @include media.respond-down('laptop') {
+    display: none !important;
+  }
 }

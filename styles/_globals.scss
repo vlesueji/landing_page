@@ -1,5 +1,7 @@
 @use 'variables';
 @use 'fonts';
+@use 'media';
+@use 'mixins';
 
 body {
   background-color: var(--white);
@@ -10,15 +12,15 @@ a {
   color: inherit;
   transition: 0.2s ease-in-out;
 
-  &:hover {
+  @include media.hover {
     color: var(--orange);
   }
 }
 
 h1 {
-  font-size: 67px;
+  @include mixins.fluid-text(67,48);
   font-weight: 600;
   line-height: 120%;
   margin-top: 15px;
-  margin-bottom: 24px;
+  margin-bottom: 5vh;
 }
