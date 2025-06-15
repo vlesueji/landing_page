@@ -29,4 +29,16 @@
   @include media.respond-down('laptop') {
     display: none !important;
   }
+  @include  media.respond-down('mobile') {
+    display: none !important;
+  }
+}
+
+.mobile-visible {
+  @include media.respond-down('laptop') {
+    display: flex !important;
+  }
+  @include  media.respond-down('mobile') {
+    display: flex !important;
+  }
 }

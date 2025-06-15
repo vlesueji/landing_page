@@ -118,6 +118,32 @@
   }
 }
 
+.burger-button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: var(--button-height);
+  aspect-ratio: 1;
+
+  @include media.hover {
+    &::after{
+      background-color: var(--orange);
+      color: var(--orange);
+    }
+  }
+
+  &::after {
+    content: '';
+    width: 60%;
+    height: 3px;
+    background-color: var(--black);
+    box-shadow: 0 10px, 0 -10px;
+    border-radius: 2px;
+    transition: 0.2s ease-in-out;
+  }
+}
+
+
 
 
 
