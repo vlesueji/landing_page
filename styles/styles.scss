@@ -96,6 +96,10 @@
   border-radius: var(--border-radius-button);
   padding-left: 24px;
 
+  @include media.respond-down('mobile') {
+    width: 200%;
+  }
+
   &__input {
     flex-grow: 1;
     padding-right: 1rem;
@@ -119,7 +123,7 @@
 }
 
 .burger-button {
-  display: none;
+  position: relative;
   justify-content: center;
   align-items: center;
   width: var(--button-height);
@@ -139,10 +143,49 @@
     background-color: var(--black);
     box-shadow: 0 10px, 0 -10px;
     border-radius: 2px;
-    transition: 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   }
 }
 
+.burger-button-close {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: var(--button-height);
+  aspect-ratio: 1;
+
+  @include media.hover {
+    &::after{
+      background-color: var(--orange);
+      color: var(--orange);
+    }
+    &::before{
+       background-color: var(--orange);
+       color: var(--orange);
+     }
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 60%;
+    height: 3px;
+    background-color: var(--black);
+    border-radius: 2px;
+    transform: rotate(45grad);
+    transition: background-color 0.2s ease-in-out;
+  }
+  &::before {
+    position: absolute;
+    content: '';
+    width: 60%;
+    height: 3px;
+    background-color: var(--black);
+    border-radius: 2px;
+    transform: rotate(-45grad);
+    transition: background-color 0.2s ease-in-out;
+  }
+}
 
 
 

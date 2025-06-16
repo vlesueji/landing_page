@@ -168,18 +168,21 @@ legend {
     display: none !important;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .hidden-mobile {
     display: none !important;
   }
 }
 
+.mobile-visible {
+  display: none;
+}
 @media (max-width: 1024px) {
   .mobile-visible {
     display: flex !important;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .mobile-visible {
     display: flex !important;
   }
@@ -305,6 +308,11 @@ h1 {
   border-radius: var(--border-radius-button);
   padding-left: 24px;
 }
+@media (max-width: 550px) {
+  .mail {
+    width: 200%;
+  }
+}
 .mail__input {
   flex-grow: 1;
   padding-right: 1rem;
@@ -333,7 +341,7 @@ h1 {
 }
 
 .burger-button {
-  display: none;
+  position: relative;
   justify-content: center;
   align-items: center;
   width: var(--button-height);
@@ -358,7 +366,55 @@ h1 {
   background-color: var(--black);
   box-shadow: 0 10px, 0 -10px;
   border-radius: 2px;
-  transition: 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.burger-button-close {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: var(--button-height);
+  aspect-ratio: 1;
+}
+@media (hover: hover) {
+  .burger-button-close:hover::after {
+    background-color: var(--orange);
+    color: var(--orange);
+  }
+  .burger-button-close:hover::before {
+    background-color: var(--orange);
+    color: var(--orange);
+  }
+}
+@media (hover: none) {
+  .burger-button-close:active::after {
+    background-color: var(--orange);
+    color: var(--orange);
+  }
+  .burger-button-close:active::before {
+    background-color: var(--orange);
+    color: var(--orange);
+  }
+}
+.burger-button-close::after {
+  position: absolute;
+  content: "";
+  width: 60%;
+  height: 3px;
+  background-color: var(--black);
+  border-radius: 2px;
+  transform: rotate(45grad);
+  transition: background-color 0.2s ease-in-out;
+}
+.burger-button-close::before {
+  position: absolute;
+  content: "";
+  width: 60%;
+  height: 3px;
+  background-color: var(--black);
+  border-radius: 2px;
+  transform: rotate(-45grad);
+  transition: background-color 0.2s ease-in-out;
 }
 
 /*# sourceMappingURL=styles.css.map */
