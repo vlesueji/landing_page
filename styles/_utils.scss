@@ -35,7 +35,6 @@
 }
 
 .mobile-visible {
-  display: none;
   @include media.respond-down('laptop') {
     display: flex !important;
   }
