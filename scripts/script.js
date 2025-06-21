@@ -9,5 +9,13 @@ let openMenu = function (){
     mobileMenu.classList.toggle('visually-hidden');
     isOpened = !isOpened;
 };
+
+let clickCheck = function (event) {
+    if (event.target.id === 'mobileMenu'){
+        mobileMenu.classList.toggle('visually-hidden');
+    }
+}
+
 buttonMenu.addEventListener('click', openMenu);
+mobileMenu.addEventListener('click', clickCheck);
 
