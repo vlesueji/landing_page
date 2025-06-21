@@ -174,9 +174,6 @@ legend {
   }
 }
 
-.mobile-visible {
-  display: none;
-}
 @media (max-width: 1024px) {
   .mobile-visible {
     display: flex !important;
@@ -353,6 +350,7 @@ h1 {
 }
 
 .burger-button {
+  display: none;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -382,6 +380,7 @@ h1 {
 }
 
 .burger-button-close {
+  display: none;
   z-index: 1000;
   position: relative;
   justify-content: center;
