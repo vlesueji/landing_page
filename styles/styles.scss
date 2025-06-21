@@ -68,13 +68,20 @@
 }
 
 .home {
-  height: clamp(430px, calc(100vh - 156px), 550px);
+  height: clamp(480px, calc(100vh - 156px), 550px);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 32px;
   border-radius: var(--border-radius-card);
   background: variables.$gradient;
+
+  @include media.respond-down('laptop'){
+    height: fit-content;
+  }
+  @include media.respond-down('mobile'){
+    height: calc(100vh - 97px);
+  }
 
   &__info {
     padding-left: 46px;
@@ -89,9 +96,7 @@
   &__image {
     position: relative;
     top: +50px;
-    height: auto;
-    width: 50%;
-    overflow: hidden;
+    width: 45%;
   }
 }
 

@@ -283,13 +283,23 @@ h1 {
 }
 
 .home {
-  height: clamp(430px, 100vh - 156px, 550px);
+  height: clamp(480px, 100vh - 156px, 550px);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 32px;
   border-radius: var(--border-radius-card);
   background: linear-gradient(to right, var(--primary), var(--secondary));
+}
+@media (max-width: 1024px) {
+  .home {
+    height: fit-content;
+  }
+}
+@media (max-width: 550px) {
+  .home {
+    height: calc(100vh - 97px);
+  }
 }
 .home__info {
   padding-left: 46px;
@@ -302,9 +312,7 @@ h1 {
 .home__image {
   position: relative;
   top: 50px;
-  height: auto;
-  width: 50%;
-  overflow: hidden;
+  width: 45%;
 }
 
 .mail {
