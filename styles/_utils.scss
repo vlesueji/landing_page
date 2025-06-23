@@ -1,6 +1,13 @@
 @use 'variables';
 @use 'media';
 
+@mixin border{
+  border-style: solid;
+  border-color: red;
+  //@include border;
+
+}
+
 .container {
   max-width: var(--container-width);
   width: 95vw;
@@ -20,10 +27,7 @@
   overflow: hidden;
 }
 
-@mixin border{
-  border-style: solid;
-  border-color: red;
-}
+
 
 .hidden-mobile {
   @include media.respond-down('laptop') {

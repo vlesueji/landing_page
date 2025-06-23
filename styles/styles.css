@@ -288,17 +288,23 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 32px;
+  padding-bottom: 20px;
   border-radius: var(--border-radius-card);
   background: linear-gradient(to right, var(--primary), var(--secondary));
 }
 @media (max-width: 1024px) {
   .home {
     height: fit-content;
+    margin-top: 5px;
   }
 }
 @media (max-width: 550px) {
   .home {
+    flex-direction: column;
+    justify-content: space-between;
     height: calc(100vh - 97px);
+    height: fit-content;
+    padding: 0;
   }
 }
 .home__info {
@@ -306,13 +312,44 @@ h1 {
   padding-top: 90px;
   width: 50%;
 }
+@media (max-width: 1024px) {
+  .home__info {
+    width: 90%;
+  }
+}
+@media (max-width: 550px) {
+  .home__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+    padding-inline: 10px;
+    margin-inline: auto;
+    line-height: 3em;
+  }
+}
 .home__mail {
   margin-top: 5vh;
 }
 .home__image {
   position: relative;
-  top: 50px;
+  align-self: center;
   width: 45%;
+  top: 50px;
+}
+@media (max-width: 1024px) {
+  .home__image {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  .home__image {
+    display: flex;
+    width: 90%;
+    top: 0;
+  }
 }
 
 .mail {
@@ -327,7 +364,7 @@ h1 {
 }
 @media (max-width: 550px) {
   .mail {
-    width: 200%;
+    width: 100%;
   }
 }
 .mail__input {

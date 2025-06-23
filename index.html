@@ -123,15 +123,16 @@
       </button>
     </form>
   </div>
-  <img
-    class="home__image hidden-mobile"
-    src="./images/header/header.png"
-    alt=""
-    width="780"
-    height="670"
-    loading="lazy"
-  >
-
+  <picture class="home__image">
+    <source media="(max-width: 550px)" srcset="./images/header/header-mobile.png">
+    <img
+      src="./images/header/header.png"
+      alt=""
+      width="780"
+      height="670"
+      loading="lazy"
+    >
+  </picture>
 </main>
 <div class="mobile-menu mobile-visible visually-hidden" id="mobileMenu">
   <ul class="mobile-menu__list">
