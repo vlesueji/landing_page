@@ -243,9 +243,11 @@
   background-color: var(--gray-2);
   opacity: 0.988;
   width: 100vw;
+  min-height: fit-content;
   height: 100vh;
   flex-direction: column;
   padding-top: 60px;
+  overflow: hidden;
 
   &__link {
     font-size: 2em;

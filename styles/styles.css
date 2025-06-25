@@ -163,6 +163,10 @@ legend {
   overflow: hidden;
 }
 
+.modal-open {
+  overflow: hidden;
+}
+
 @media (max-width: 1024px) {
   .hidden-mobile {
     display: none !important;
@@ -482,9 +486,11 @@ h1 {
   background-color: var(--gray-2);
   opacity: 0.988;
   width: 100vw;
+  min-height: fit-content;
   height: 100vh;
   flex-direction: column;
   padding-top: 60px;
+  overflow: hidden;
 }
 .mobile-menu__link {
   font-size: 2em;

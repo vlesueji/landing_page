@@ -21,7 +21,7 @@
   >
   <title>Build</title>
 </head>
-<body>
+<body id="body">
 <header class="header container">
   <a
     class="header__logo"
@@ -98,41 +98,43 @@
   </button>
   <button class="burger-button mobile-visible" id="menuButton"></button>
 </header>
-<main class="home container">
-  <div class="home__info">
-    <p>Welcome to Realstate</p>
-    <h1>Manage Your Property</h1>
-    <p>Your will have everything nearby supermarket, buses , station, the carmen neighborhood, etc</p>
-    <form
-      class="mail home__mail"
-      action=""
-      autocomplete="on"
-      method="get"
-    >
-      <input
-        class="mail__input"
-        type="email"
-        name=""
-        id="user-email"
-        placeholder="Enter your email"
+<main>
+  <section class="home container">
+    <div class="home__info">
+      <p>Welcome to Realstate</p>
+      <h1>Manage Your Property</h1>
+      <p>Your will have everything nearby supermarket, buses , station, the carmen neighborhood, etc</p>
+      <form
+        class="mail home__mail"
+        action=""
+        autocomplete="on"
+        method="get"
       >
-      <button
-        class="mail__button"
-        type="submit"
-      >Get a Quote
-      </button>
-    </form>
-  </div>
-  <picture class="home__image">
-    <source media="(max-width: 550px)" srcset="./images/header/header-mobile.png">
-    <img
-      src="./images/header/header.png"
-      alt=""
-      width="780"
-      height="670"
-      loading="lazy"
-    >
-  </picture>
+        <input
+          class="mail__input"
+          type="email"
+          name=""
+          id="user-email"
+          placeholder="Enter your email"
+        >
+        <button
+          class="mail__button"
+          type="submit"
+        >Get a Quote
+        </button>
+      </form>
+    </div>
+    <picture class="home__image">
+      <source media="(max-width: 550px)" srcset="./images/header/header-mobile.png">
+      <img
+        src="./images/header/header.png"
+        alt=""
+        width="780"
+        height="670"
+        loading="lazy"
+      >
+    </picture>
+  </section>
 </main>
 <div class="mobile-menu mobile-visible visually-hidden" id="mobileMenu">
   <ul class="mobile-menu__list">
