@@ -515,4 +515,13 @@ h1 {
   margin: 2em;
 }
 
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register__steps {
+  display: flex;
+}
+
 /*# sourceMappingURL=styles.css.map */
