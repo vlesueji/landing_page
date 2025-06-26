@@ -419,6 +419,15 @@ h3 {
   width: var(--button-height);
   aspect-ratio: 1;
 }
+.burger-button::after {
+  content: "";
+  width: 60%;
+  height: 3px;
+  background-color: var(--black);
+  box-shadow: 0 10px, 0 -10px;
+  border-radius: 2px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
 @media (hover: hover) {
   .burger-button:hover::after {
     background-color: var(--orange);
@@ -430,15 +439,6 @@ h3 {
     background-color: var(--orange);
     color: var(--orange);
   }
-}
-.burger-button::after {
-  content: "";
-  width: 60%;
-  height: 3px;
-  background-color: var(--black);
-  box-shadow: 0 10px, 0 -10px;
-  border-radius: 2px;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .burger-button-close {
@@ -489,6 +489,26 @@ h3 {
   border-radius: 2px;
   transform: rotate(-45grad);
   transition: background-color 0.2s ease-in-out;
+}
+@media (hover: hover) {
+  .burger-button-close:hover::after {
+    background-color: var(--orange);
+    color: var(--orange);
+  }
+  .burger-button-close:hover::before {
+    background-color: var(--orange);
+    color: var(--orange);
+  }
+}
+@media (hover: none) {
+  .burger-button-close:active::after {
+    background-color: var(--orange);
+    color: var(--orange);
+  }
+  .burger-button-close:active::before {
+    background-color: var(--orange);
+    color: var(--orange);
+  }
 }
 
 .mobile-menu {
