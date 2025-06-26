@@ -18,9 +18,21 @@ a {
 }
 
 h1 {
-  @include mixins.fluid-text(67,48);
+  @include mixins.fluid-text(67, 48);
   font-weight: 600;
   line-height: 120%;
   margin-top: 15px;
   margin-bottom: 5vh;
+}
+
+h2 {
+  @include mixins.fluid-text(50, 31);
+  line-height: 120%;
+  font-weight: 600;
+}
+
+h3 {
+  @include mixins.fluid-text(32, 16);
+  font-weight: 600;
+  line-height: 120%;
 }
