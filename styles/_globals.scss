@@ -15,6 +15,12 @@ a {
   @include media.hover {
     color: var(--orange);
   }
+  svg {
+    transition: 0.2s ease-in-out;
+    @include media.hover {
+      filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.7));
+    }
+  }
 }
 
 h1 {
