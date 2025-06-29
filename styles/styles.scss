@@ -343,6 +343,27 @@
       "icon paragraph";
   }
 }
+.portfolio {
+  padding-top: 130px;
+
+  &__paragraph {
+    padding-top: 16px;
+  }
+
+  &__projects {
+    margin-top: 20px;
+  }
+}
+
+.projects {
+  @include utils.border;
+  display: flex;
+  height: 440px;
+
+  &__item {
+
+  }
+}
 
 
 

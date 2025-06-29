@@ -620,4 +620,21 @@ h3 {
   }
 }
 
+.portfolio {
+  padding-top: 130px;
+}
+.portfolio__paragraph {
+  padding-top: 16px;
+}
+.portfolio__projects {
+  margin-top: 20px;
+}
+
+.projects {
+  border-style: solid;
+  border-color: red;
+  display: flex;
+  height: 440px;
+}
+
 /*# sourceMappingURL=styles.css.map */
