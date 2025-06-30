@@ -189,6 +189,10 @@ legend {
   }
 }
 
+.active {
+  filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.7));
+}
+
 body {
   background-color: var(--white);
   font-family: var(--font-main);
@@ -584,13 +588,26 @@ h3 {
   }
 }
 
+.step-item:hover .step-item__image {
+  filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.7));
+}
 .step-item__image {
   width: 75px;
   height: 75px;
 }
 @media (max-width: 1024px) {
-  .step-item__link {
+  .step-item__image {
     grid-area: icon;
+  }
+}
+@media (hover: hover) {
+  .step-item__link:hover {
+    color: inherit;
+  }
+}
+@media (hover: none) {
+  .step-item__link:active {
+    color: inherit;
   }
 }
 .step-item__title {

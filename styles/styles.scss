@@ -304,15 +304,21 @@
 }
 
 .step-item {
+  &:hover .step-item__image {
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.7));
+  }
 
   &__image {
     width: 75px;
     height: 75px;
+    @include media.respond-down('laptop') {
+      grid-area: icon;
+    }
   }
 
   &__link {
-    @include media.respond-down('laptop') {
-      grid-area: icon;
+    @include media.hover {
+      color: inherit;
     }
   }
 
@@ -343,6 +349,7 @@
       "icon paragraph";
   }
 }
+
 .portfolio {
   padding-top: 130px;
 
