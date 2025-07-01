@@ -19,6 +19,7 @@
     href="./images/favicon.png"
     type="image/x-icon"
   >
+
   <title>Build</title>
 </head>
 <body id="body">
@@ -300,15 +301,39 @@
   <section class="portfolio container">
     <p class="portfolio__paragraph">Best Project of the Years</p>
     <h2 class="portfolio__title">Our recent projects</h2>
-    <div class="portfolio__projects projects">
-      <div class="projects__item">
-        <picture>
+
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
           <img
-            src="./images/portfolio/work3.png"
+            src="./images/header/header-mobile.png"
             alt=""
           >
-        </picture>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./images/vuesax/linear/messages.svg"
+            alt=""
+          >
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="./images/header/header-mobile.png"
+            alt=""
+          >
+        </div>
       </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
     </div>
 
   </section>
@@ -373,6 +398,10 @@
   >Contact us
   </button>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {});
+</script>
 <script src="./scripts/script.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 const body = document.getElementById('body');
 const buttonMenu = document.getElementById('menuButton');
 const mobileMenu = document.getElementById('mobileMenu');

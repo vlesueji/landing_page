@@ -85,7 +85,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: calc(100vh - 97px);
-    height: fit-content;
+    min-height: fit-content;
     padding: 0;
   }
 
@@ -365,12 +365,36 @@
 .projects {
   @include utils.border;
   display: flex;
-  height: 440px;
-
   &__item {
 
   }
 }
+
+//------swiper
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+//-----------/swiper/
 
 
 

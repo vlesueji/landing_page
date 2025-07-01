@@ -336,7 +336,7 @@ h3 {
     flex-direction: column;
     justify-content: space-between;
     height: calc(100vh - 97px);
-    height: fit-content;
+    min-height: fit-content;
     padding: 0;
   }
 }
@@ -651,7 +651,26 @@ h3 {
   border-style: solid;
   border-color: red;
   display: flex;
-  height: 440px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */
