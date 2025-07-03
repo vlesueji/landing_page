@@ -12,6 +12,10 @@
   >
   <link
     rel="stylesheet"
+    href="./styles/swiper/swiper-bundle.css"
+  >
+  <link
+    rel="stylesheet"
     href="./styles/styles.css"
   >
   <link
@@ -302,25 +306,25 @@
     <p class="portfolio__paragraph">Best Project of the Years</p>
     <h2 class="portfolio__title">Our recent projects</h2>
 
-    <div class="swiper">
+    <div class="swiper portfolio__projects">
       <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
+      <div class="projects swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide">
+        <div class="swiper-slide projects__item">
           <img
-            src="./images/header/header-mobile.png"
+            src="./images/portfolio/work1.png"
             alt=""
           >
         </div>
         <div class="swiper-slide">
           <img
-            src="./images/vuesax/linear/messages.svg"
+            src="./images/portfolio/work2.png"
             alt=""
           >
         </div>
         <div class="swiper-slide">
           <img
-            src="./images/header/header-mobile.png"
+            src="./images/portfolio/work3.png"
             alt=""
           >
         </div>
@@ -335,7 +339,6 @@
       <!-- If we need scrollbar -->
       <div class="swiper-scrollbar"></div>
     </div>
-
   </section>
 </main>
 <div
@@ -397,10 +400,30 @@
     type="button"
   >Contact us
   </button>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</div> <!--mobile menu-->
+<script src="./scripts/swiper-bundle.js"></script>
 <script>
-  var swiper = new Swiper(".mySwiper", {});
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    // direction: 'vertical',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
 </script>
 <script src="./scripts/script.js"></script>
 </body>

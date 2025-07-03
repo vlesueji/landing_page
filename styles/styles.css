@@ -645,32 +645,16 @@ h3 {
 }
 .portfolio__projects {
   margin-top: 20px;
+  display: flex;
+  margin-inline: auto;
 }
 
 .projects {
-  border-style: solid;
-  border-color: red;
   display: flex;
 }
 .swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #444;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 600px;
+  height: 300px;
 }
 
 /*# sourceMappingURL=styles.css.map */
