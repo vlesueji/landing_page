@@ -652,6 +652,11 @@ h3 {
 .projects {
   display: flex;
 }
+.projects__item {
+  display: flex;
+  justify-content: center;
+}
+
 .swiper {
   width: 600px;
   height: 300px;
