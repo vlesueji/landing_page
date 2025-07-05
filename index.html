@@ -304,7 +304,13 @@
   </section>
   <section class="portfolio container">
     <p class="portfolio__paragraph">Best Project of the Years</p>
-    <h2 class="portfolio__title">Our recent projects</h2>
+    <div class="portfolio__header">
+      <h2 class="portfolio__header-title">Our recent projects</h2>
+      <div class="portfolio__navigation">
+        <div class="navigation__button-prev"></div>
+        <div class="navigation__button-next"></div>
+      </div>
+    </div>
 
     <div class="swiper portfolio__projects">
       <!-- Additional required wrapper -->
@@ -372,7 +378,7 @@
         </div>
       </div>
       <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
+<!--      <div class="swiper-pagination"></div>-->
 
       <!-- If we need navigation buttons -->
       <div class="swiper-button-prev"></div>
@@ -453,9 +459,9 @@
     loop: true,
 
     // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
+    // pagination: {
+    //   el: '.swiper-pagination',
+    // },
 
     // Navigation arrows
     navigation: {
