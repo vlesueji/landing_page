@@ -307,8 +307,18 @@
     <div class="portfolio__header">
       <h2 class="portfolio__header-title">Our recent projects</h2>
       <div class="portfolio__navigation">
-        <div class="navigation__button-prev"></div>
-        <div class="navigation__button-next"></div>
+        <div class="navigation__button-prev">
+          <svg class="navigation__button" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="22.5" cy="22.5" r="22.5" fill="#FEFEFF"/>
+            <path d="M26 30.92L19.48 24.4C18.71 23.63 18.71 22.37 19.48 21.6L26 15.08" stroke="#1F1F1F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="navigation__button-next">
+          <svg class="navigation__button" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(180 0 0)">
+            <circle cx="22.5" cy="22.5" r="22.5" fill="#FEFEFF"/>
+            <path d="M26 30.92L19.48 24.4C18.71 23.63 18.71 22.37 19.48 21.6L26 15.08" stroke="#1F1F1F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
       </div>
     </div>
 
@@ -321,6 +331,8 @@
             src="./images/portfolio/portfolio1.webp"
             alt=""
           >
+          <h4 class="item__header">Sobha Hearland II Villas</h4>
+          <p class="item__paragraph">Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum.</p>
         </div>
         <div class="swiper-slide projects__item">
           <img
@@ -380,9 +392,9 @@
       <!-- If we need pagination -->
 <!--      <div class="swiper-pagination"></div>-->
 
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+<!--      &lt;!&ndash; If we need navigation buttons &ndash;&gt;-->
+<!--      <div class="swiper-button-prev"></div>-->
+<!--      <div class="swiper-button-next"></div>-->
 
       <!-- If we need scrollbar -->
       <!--      <div class="swiper-scrollbar"></div>-->
@@ -465,8 +477,8 @@
 
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.navigation__button-next',
+      prevEl: '.navigation__button-prev',
     },
 
     // And if we need scrollbar

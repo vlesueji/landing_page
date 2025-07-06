@@ -652,7 +652,7 @@ h3 {
 }
 .portfolio__navigation {
   display: flex;
-  gap: 40px;
+  gap: 10px;
 }
 .portfolio__projects {
   margin-top: 20px;
@@ -665,6 +665,7 @@ h3 {
 }
 .projects__item {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
