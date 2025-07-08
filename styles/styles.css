@@ -639,7 +639,6 @@ h3 {
 
 .portfolio {
   padding-top: 130px;
-  padding-bottom: 200px;
 }
 .portfolio__paragraph {
   padding-top: 16px;
@@ -714,6 +713,12 @@ h3 {
 
 .swiper {
   width: 100%;
+}
+
+.about__title {
+  margin: 100px auto 45px;
+  max-width: 60%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

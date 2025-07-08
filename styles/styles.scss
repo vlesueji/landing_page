@@ -352,7 +352,6 @@
 
 .portfolio {
   padding-top: 130px;
-  padding-bottom: 200px;
 
   &__paragraph {
     padding-top: 16px;
@@ -436,6 +435,14 @@
 }
 
 //-----------/swiper/
+
+.about {
+  &__title {
+    margin: 100px auto 45px;
+    max-width: 60%;
+    text-align: center;
+  }
+}
 
 
 
