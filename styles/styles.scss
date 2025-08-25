@@ -428,19 +428,78 @@
   }
 }
 
-
-//------swiper
 .swiper {
   width: 100%;
 }
 
-//-----------/swiper/
-
 .about {
   &__title {
     margin: 100px auto 45px;
-    max-width: 60%;
+    max-width: 70%;
     text-align: center;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    width: 50%;
+    &-title {
+      @include mixins.fluid-text(36, 40);
+      font-weight: 600;
+      padding-left: 1rem;
+      margin-bottom: 2rem;
+    }
+    &-paragraph {
+      padding-left: 1rem;
+      width: 80%;
+    }
+  }
+
+  &__statistic {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
+  &__control {
+    margin-top: 45px;
+    display: flex;
+    gap: 1rem;
+    padding-left: 1rem;
+  }
+  &__button {
+    background-color: var(--black);
+    color: var(--white);
+    border-width: 1px;
+    border-style: solid;
+    height: 60px;
+    width: 150px;
+    border-radius: var(--border-radius-button);
+    transition: 0.2s ease-in-out;
+
+    @include media.hover{
+      color: var(--orange);
+      border-color: var(--orange);
+    }
+    &-invert {
+      background-color: var(--white);
+      color: var(--black);
+      border-width: 1px;
+      border-style: solid;
+      border-color: var(--black);
+      height: 60px;
+      width: 150px;
+      border-radius: var(--border-radius-button);
+      transition: 0.2s ease-in-out;
+
+      @include media.hover{
+        color: var(--orange);
+        border-color: var(--orange);
+      }
+    }
   }
 }
 

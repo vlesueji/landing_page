@@ -717,8 +717,82 @@ h3 {
 
 .about__title {
   margin: 100px auto 45px;
-  max-width: 60%;
+  max-width: 70%;
   text-align: center;
+}
+.about__block {
+  display: flex;
+  justify-content: space-between;
+}
+.about__info {
+  width: 50%;
+}
+.about__info-title {
+  font-size: clamp(40px, 2.5714285714vw, 36px);
+  font-weight: 600;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+.about__info-paragraph {
+  padding-left: 1rem;
+  width: 80%;
+}
+.about__statistic {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.about__control {
+  margin-top: 45px;
+  display: flex;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+.about__button {
+  background-color: var(--black);
+  color: var(--white);
+  border-width: 1px;
+  border-style: solid;
+  height: 60px;
+  width: 150px;
+  border-radius: var(--border-radius-button);
+  transition: 0.2s ease-in-out;
+}
+@media (hover: hover) {
+  .about__button:hover {
+    color: var(--orange);
+    border-color: var(--orange);
+  }
+}
+@media (hover: none) {
+  .about__button:active {
+    color: var(--orange);
+    border-color: var(--orange);
+  }
+}
+.about__button-invert {
+  background-color: var(--white);
+  color: var(--black);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--black);
+  height: 60px;
+  width: 150px;
+  border-radius: var(--border-radius-button);
+  transition: 0.2s ease-in-out;
+}
+@media (hover: hover) {
+  .about__button-invert:hover {
+    color: var(--orange);
+    border-color: var(--orange);
+  }
+}
+@media (hover: none) {
+  .about__button-invert:active {
+    color: var(--orange);
+    border-color: var(--orange);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

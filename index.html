@@ -23,7 +23,6 @@
     href="./images/favicon.png"
     type="image/x-icon"
   >
-
   <title>Build</title>
 </head>
 <body id="body">
@@ -308,15 +307,54 @@
       <h2 class="portfolio__header-title">Our recent projects</h2>
       <div class="portfolio__navigation">
         <div class="navigation__button-prev">
-          <svg class="navigation__button" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="22.5" cy="22.5" r="22.5" fill="#FEFEFF"/>
-            <path d="M26 30.92L19.48 24.4C18.71 23.63 18.71 22.37 19.48 21.6L26 15.08" stroke="#1F1F1F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <svg
+            class="navigation__button"
+            width="45"
+            height="45"
+            viewBox="0 0 45 45"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="22.5"
+              cy="22.5"
+              r="22.5"
+              fill="#FEFEFF"
+            />
+            <path
+              d="M26 30.92L19.48 24.4C18.71 23.63 18.71 22.37 19.48 21.6L26 15.08"
+              stroke="#1F1F1F"
+              stroke-width="1.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
           </svg>
         </div>
         <div class="navigation__button-next">
-          <svg class="navigation__button" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(180 0 0)">
-            <circle cx="22.5" cy="22.5" r="22.5" fill="#FEFEFF"/>
-            <path d="M26 30.92L19.48 24.4C18.71 23.63 18.71 22.37 19.48 21.6L26 15.08" stroke="#1F1F1F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <svg
+            class="navigation__button"
+            width="45"
+            height="45"
+            viewBox="0 0 45 45"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            transform="rotate(180 0 0)"
+          >
+            <circle
+              cx="22.5"
+              cy="22.5"
+              r="22.5"
+              fill="#FEFEFF"
+            />
+            <path
+              d="M26 30.92L19.48 24.4C18.71 23.63 18.71 22.37 19.48 21.6L26 15.08"
+              stroke="#1F1F1F"
+              stroke-width="1.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
           </svg>
         </div>
       </div>
@@ -487,11 +525,11 @@
         </div>
       </div>
       <!-- If we need pagination -->
-<!--      <div class="swiper-pagination"></div>-->
+      <!--      <div class="swiper-pagination"></div>-->
 
-<!--      &lt;!&ndash; If we need navigation buttons &ndash;&gt;-->
-<!--      <div class="swiper-button-prev"></div>-->
-<!--      <div class="swiper-button-next"></div>-->
+      <!--      &lt;!&ndash; If we need navigation buttons &ndash;&gt;-->
+      <!--      <div class="swiper-button-prev"></div>-->
+      <!--      <div class="swiper-button-next"></div>-->
 
       <!-- If we need scrollbar -->
       <!--      <div class="swiper-scrollbar"></div>-->
@@ -501,11 +539,11 @@
     <h2 class="about__title">We are a global, boutique real estate brokerage</h2>
     <div class="about__block">
       <div class="about__info">
-        <h4 class="about__title">The transfer of real estate</h4>
-        <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur. Feugiat ut aliquet sit pellentesque sollicitudin. Egestas faucibus lacus diam in senectus consectetur. Mattis elit adipiscing quisque tellus scelerisque vehicula ante nunc. Tellus consequat nisl quis nisl justo.</p>
+        <h4 class="about__info-title">The transfer of real estate</h4>
+        <p class="about__info-paragraph">Lorem ipsum dolor sit amet consectetur. Feugiat ut aliquet sit pellentesque sollicitudin. Egestas faucibus lacus diam in senectus consectetur. Mattis elit adipiscing quisque tellus scelerisque vehicula ante nunc. Tellus consequat nisl quis nisl justo.</p>
         <div class="about__control">
-          <button class="about__button"></button>
-          <button class="about__button"></button>
+          <button class="about__button">Book Now!</button>
+          <button class="about__button-invert">Read More</button>
         </div>
         <div class="about__statistic">
           <div class="statistic__customers">
@@ -529,8 +567,6 @@
         >
       </div>
     </div>
-
-
   </section>
 </main>
 <div
@@ -592,33 +628,8 @@
     type="button"
   >Contact us
   </button>
-</div> <!--mobile menu-->
+</div>
 <script src="./scripts/swiper-bundle.js"></script>
-<script>
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    // direction: 'vertical',
-    slidesPerView: 3,
-    spaceBetween: 30,
-    loop: true,
-
-    // If we need pagination
-    // pagination: {
-    //   el: '.swiper-pagination',
-    // },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.navigation__button-next',
-      prevEl: '.navigation__button-prev',
-    },
-
-    // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
-  });
-</script>
 <script src="./scripts/script.js"></script>
 </body>
 </html>

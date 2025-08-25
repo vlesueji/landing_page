@@ -26,3 +26,13 @@ function clickCheck (evt) {
 buttonMenu.addEventListener('click', openMenu);
 mobileMenu.addEventListener('click', clickCheck);
 
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+        nextEl: '.navigation__button-next',
+        prevEl: '.navigation__button-prev',
+    }
+});
+
