@@ -442,19 +442,34 @@
   &__block {
     display: flex;
     justify-content: space-between;
+    @include media.respond-down('mobile'){
+      flex-direction: column-reverse;
+    }
   }
 
   &__info {
     width: 50%;
+    @include media.respond-down('mobile'){
+      width: 100%;
+    }
     &-title {
       @include mixins.fluid-text(36, 40);
       font-weight: 600;
       padding-left: 1rem;
       margin-bottom: 2rem;
+      @include media.respond-down('mobile'){
+        padding-left: 0;
+        text-align: center;
+      }
     }
     &-paragraph {
       padding-left: 1rem;
       width: 80%;
+      @include media.respond-down('mobile'){
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+      }
     }
   }
 
@@ -463,12 +478,24 @@
     display: flex;
     justify-content: space-between;
     margin-top: 80px;
+    @include media.respond-down('mobile'){
+      width: 100%;
+      justify-content: space-around;
+    }
+  }
+
+  .statistic__element {
+    text-align: center;
   }
   &__control {
     margin-top: 45px;
     display: flex;
     gap: 1rem;
     padding-left: 1rem;
+    @include media.respond-down('mobile'){
+      padding-left: 0;
+      justify-content: center;
+    }
   }
   &__button {
     background-color: var(--black);
