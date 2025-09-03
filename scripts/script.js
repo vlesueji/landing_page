@@ -20,7 +20,6 @@ function clickCheck(evt) {
     buttonMenu.classList.toggle('burger-button');
     buttonMenu.classList.toggle('burger-button-close');
     body.classList.toggle('modal-open');
-
   }
 }
 
