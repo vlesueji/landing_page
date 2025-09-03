@@ -665,6 +665,7 @@ h3 {
 
 .projects {
   display: flex;
+  padding-top: 1rem;
 }
 .projects__item {
   display: flex;
@@ -672,6 +673,11 @@ h3 {
   justify-content: center;
   border-radius: var(--border-radius-card);
   box-shadow: var(--gray-color) 0 1px 2px;
+  transition: 0.2s ease-in-out;
+}
+.projects__item:hover {
+  transform: scale(1.02);
+  box-shadow: var(--gray-color) 0 4px 4px;
 }
 
 .item__image {
