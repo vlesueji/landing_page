@@ -1,6 +1,6 @@
-const body = document.getElementById('body');
-const buttonMenu = document.getElementById('menuButton');
-const mobileMenu = document.getElementById('mobileMenu');
+const body = document.body;
+const buttonMenu = document.querySelector('#menuButton');
+const mobileMenu = document.querySelector('#mobileMenu');
 
 let sliders = Math.floor(window.innerWidth/400);
 
