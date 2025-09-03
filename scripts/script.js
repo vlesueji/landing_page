@@ -1,11 +1,8 @@
 const body = document.body;
 const buttonMenu = document.querySelector('#menuButton');
 const mobileMenu = document.querySelector('#mobileMenu');
-
 let sliders = Math.floor(window.innerWidth / 400);
-
 let isOpened = false;
-
 let openMenu = function () {
   buttonMenu.classList.toggle('burger-button');
   buttonMenu.classList.toggle('burger-button-close');
