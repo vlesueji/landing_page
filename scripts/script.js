@@ -1,4 +1,3 @@
-
 const body = document.getElementById('body');
 const buttonMenu = document.getElementById('menuButton');
 const mobileMenu = document.getElementById('mobileMenu');
@@ -28,13 +27,17 @@ function clickCheck (evt) {
 buttonMenu.addEventListener('click', openMenu);
 mobileMenu.addEventListener('click', clickCheck);
 
-const swiper = new Swiper('.swiper', {
-    slidesPerView: sliders,
-    spaceBetween: 30,
-    loop: true,
-    navigation: {
-        nextEl: '.navigation__button-next',
-        prevEl: '.navigation__button-prev',
-    }
+addEventListener("DOMContentLoaded",function () {
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: sliders,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: '.navigation__button-next',
+            prevEl: '.navigation__button-prev',
+        }
+    });
 });
+
+
 

@@ -390,7 +390,7 @@
     transition: 0.2s ease-in-out;
   }
   &__item:hover {
-    transform:scale(1.02);
+    transform:scale(1.01);
     box-shadow: var(--gray-color) 0 4px 4px;
   }
 }
