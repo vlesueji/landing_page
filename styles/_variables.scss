@@ -1,5 +1,10 @@
 $gradient: linear-gradient(to right, var(--primary), var(--secondary));
 
+$breakpoints: (
+  'mobile': 550px,
+  'laptop': 1024px,
+);
+
 :root {
   --primary: #c1dee8;
   --secondary: #fbd9b9;
@@ -23,9 +28,12 @@ $gradient: linear-gradient(to right, var(--primary), var(--secondary));
   --input-height: 60px;
 
   --transition-duration: 0.2s;
+
+  @each $key, $value in $breakpoints {
+    --breakpoint-#{$key}: #{$value};
+  }
 }
 
-$breakpoints: (
-  'mobile': 550px,
-  'laptop': 1024px,
-);
+
+
+

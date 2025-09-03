@@ -3,6 +3,8 @@ const body = document.getElementById('body');
 const buttonMenu = document.getElementById('menuButton');
 const mobileMenu = document.getElementById('mobileMenu');
 
+let sliders = Math.floor(window.innerWidth/400);
+
 let isOpened = false;
 
 let openMenu = function (){
@@ -27,7 +29,7 @@ buttonMenu.addEventListener('click', openMenu);
 mobileMenu.addEventListener('click', clickCheck);
 
 const swiper = new Swiper('.swiper', {
-    slidesPerView: 3,
+    slidesPerView: sliders,
     spaceBetween: 30,
     loop: true,
     navigation: {
