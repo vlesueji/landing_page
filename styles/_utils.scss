@@ -4,8 +4,6 @@
 @mixin border{
   border-style: solid;
   border-color: red;
-  //@include border;
-
 }
 
 .container {
