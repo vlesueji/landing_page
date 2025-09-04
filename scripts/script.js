@@ -1,9 +1,11 @@
 const body = document.body;
 const buttonMenu = document.querySelector('#menuButton');
 const mobileMenu = document.querySelector('#mobileMenu');
+const headerLogo = document.querySelector('.header__logo');
 let sliders = Math.floor(window.innerWidth / 400);
 let isOpened = false;
 let openMenu = function () {
+  headerLogo.classList.toggle('non-visible');
   buttonMenu.classList.toggle('burger-button');
   buttonMenu.classList.toggle('burger-button-close');
   mobileMenu.classList.toggle('visually-hidden');

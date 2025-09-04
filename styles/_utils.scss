@@ -25,6 +25,11 @@
   overflow: hidden;
 }
 
+.non-visible {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .modal-open {
   overflow: hidden;
 }
