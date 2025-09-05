@@ -1,10 +1,11 @@
 const body = document.body;
 const buttonMenu = document.querySelector('#menuButton');
 const mobileMenu = document.querySelector('#mobileMenu');
+const header = document.querySelector('.header');
 const headerLogo = document.querySelector('.header__logo');
 let sliders = Math.floor(window.innerWidth / 400);
 let isOpened = false;
-let currentScrollPosition = 0;
+let currentScrollPosition = window.scrollY;
 
 let openMenu = function () {
   headerLogo.classList.toggle('non-visible');
@@ -15,18 +16,14 @@ let openMenu = function () {
   body.classList.toggle('modal-open');
 };
 
-let checkScrollDirection = function () {
-  if (window.scrollY > currentScrollPosition) {
+function hideHeader() {
+  if (window.scrollY > currentScrollPosition & window.scrollY > header.offsetHeight) {
+    header.classList.add('non-visible');
     currentScrollPosition = window.scrollY;
-    return 'scrollDown'
-  } else if(window.scrollY < currentScrollPosition) {
+  } else if (window.scrollY < currentScrollPosition) {
+    header.classList.remove('non-visible');
     currentScrollPosition = window.scrollY;
-    return 'scrollUp'
   }
-};
-
-let hideHeader = function () {
-
 }
 
 function clickCheck(evt) {
@@ -39,7 +36,7 @@ function clickCheck(evt) {
   }
 }
 
-window.addEventListener('scroll', checkScrollDirection);
+window.addEventListener('scroll', hideHeader);
 buttonMenu.addEventListener('click', openMenu);
 mobileMenu.addEventListener('click', clickCheck);
 

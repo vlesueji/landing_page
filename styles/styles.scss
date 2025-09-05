@@ -7,6 +7,7 @@
 @use "globals";
 
 .header {
+  transition: opacity 0.5s ease-in-out;
   height: 90px;
   display: flex;
   flex-direction: row;
