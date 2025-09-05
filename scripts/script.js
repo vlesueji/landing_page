@@ -4,6 +4,8 @@ const mobileMenu = document.querySelector('#mobileMenu');
 const headerLogo = document.querySelector('.header__logo');
 let sliders = Math.floor(window.innerWidth / 400);
 let isOpened = false;
+let currentScrollPosition = 0;
+
 let openMenu = function () {
   headerLogo.classList.toggle('non-visible');
   buttonMenu.classList.toggle('burger-button');
@@ -12,6 +14,20 @@ let openMenu = function () {
   isOpened = !isOpened;
   body.classList.toggle('modal-open');
 };
+
+let checkScrollDirection = function () {
+  if (window.scrollY > currentScrollPosition) {
+    currentScrollPosition = window.scrollY;
+    return 'scrollDown'
+  } else if(window.scrollY < currentScrollPosition) {
+    currentScrollPosition = window.scrollY;
+    return 'scrollUp'
+  }
+};
+
+let hideHeader = function () {
+
+}
 
 function clickCheck(evt) {
   if (evt.target.id === 'mobileMenu') {
@@ -23,6 +39,7 @@ function clickCheck(evt) {
   }
 }
 
+window.addEventListener('scroll', checkScrollDirection);
 buttonMenu.addEventListener('click', openMenu);
 mobileMenu.addEventListener('click', clickCheck);
 
@@ -37,6 +54,3 @@ addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-
-
