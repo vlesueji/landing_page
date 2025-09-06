@@ -6,6 +6,7 @@ const headerLogo = document.querySelector('.header__logo');
 let sliders = Math.floor(window.innerWidth / 400);
 let isOpened = false;
 let currentScrollPosition = window.scrollY;
+let ticking = false;
 
 let openMenu = function () {
   headerLogo.classList.toggle('non-visible');
@@ -36,7 +37,15 @@ function clickCheck(evt) {
   }
 }
 
-window.addEventListener('scroll', hideHeader);
+window.addEventListener('scroll', () => {
+  if (!ticking) {
+    ticking = true;
+    requestAnimationFrame(()=> {
+      hideHeader();
+      ticking = false;
+    });
+  }
+});
 buttonMenu.addEventListener('click', openMenu);
 mobileMenu.addEventListener('click', clickCheck);
 
