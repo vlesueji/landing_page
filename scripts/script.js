@@ -27,14 +27,12 @@ function hideHeader() {
   }
 }
 
-function clickCheck(evt) {
-  if (evt.target.id === 'mobileMenu') {
+function clickCheck() {
     headerLogo.classList.toggle('non-visible');
     mobileMenu.classList.toggle('visually-hidden');
     buttonMenu.classList.toggle('burger-button');
     buttonMenu.classList.toggle('burger-button-close');
     body.classList.toggle('modal-open');
-  }
 }
 
 window.addEventListener('scroll', () => {
