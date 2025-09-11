@@ -34,8 +34,6 @@
   overflow: hidden;
 }
 
-
-
 .hidden-mobile {
   @include media.respond-down('laptop') {
     display: none !important;
